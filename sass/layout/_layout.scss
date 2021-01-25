@@ -1,0 +1,162 @@
+/* first-section layout */
+.layout {
+  min-height: 100vh;
+  background: #fffcfc;
+  z-index: -1;
+}
+
+// big-circle
+.big-circle {
+  width: 50em;
+  height: 50em;
+  border: 3px solid rgba(163, 182, 197, 0.36) 1%;
+  background: linear-gradient(
+    147.02deg,
+    rgba(163, 182, 197, 0.24) 1.79%,
+    rgba(163, 182, 197, 0.36) 96.83%
+  );
+  filter: blur(200px);
+  -webkit-filter: blur(200px);
+  display: inline-block;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.layout-1 {
+  position: absolute;
+  top: 5em;
+  left: 5em;
+}
+
+.layout-2 {
+  position: absolute;
+  top: 5;
+  right: 5em;
+}
+
+// bubble
+.circle {
+  border: 3px solid rgba(163, 182, 197, 0.36) 96.83%;
+  background: linear-gradient(
+    147.02deg,
+    rgba(163, 182, 197, 0.24) 1.79%,
+    rgba(163, 182, 197, 0.36) 96.83%
+  );
+  filter: blur(3x);
+  -webkit-filter: blur(3px);
+  display: inline-block;
+  border-radius: 50%;
+}
+.circle-1 {
+  width: 187px;
+  height: 187px;
+  position: absolute;
+}
+
+.first-circle-1 {
+  bottom: -8em;
+  left: 10em;
+}
+.circle-2 {
+  width: 257px;
+  height: 257px;
+  position: absolute;
+}
+
+.first-circle-2 {
+  top: 15em;
+  left: 60em;
+}
+.circle-3 {
+  width: 77px;
+  height: 77px;
+  position: absolute;
+}
+
+.first-circle-3 {
+  bottom: 5em;
+  right: 55em;
+}
+
+// second-section layout
+
+.second-section {
+  position: relative;
+}
+.second-circle-1 {
+  top: -10em;
+  left: 50em;
+}
+
+.second-circle-2 {
+  top: 30em;
+  right: 50em;
+}
+
+.second-circle-3 {
+  top: 0;
+  right: 30em;
+}
+
+// third-section layout
+
+.third-section {
+  background: linear-gradient(253.81deg, #f0f0f0 0%, #d2d2d2 100.83%);
+  border-radius: 35px;
+  position: relative;
+  min-height: 120vh;
+}
+
+.third-big-circle {
+  background: linear-gradient(180deg, #a2bed3 0%, #87c2f0 100%);
+}
+
+.third-circle-layout {
+  border: 2px solid rgba(255, 255, 255, 0.9);
+
+  background: linear-gradient(
+    113.48deg,
+    rgba(255, 255, 255, 0.48) 100%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+  filter: blur(1px);
+}
+
+.third-circle-1 {
+  top: 15em;
+  left: 10em;
+  z-index: -1;
+}
+
+.third-circle-2 {
+  top: 5em;
+  right: 10em;
+  z-index: -1;
+}
+
+.third-circle-3 {
+  bottom: 10em;
+  right: 40em;
+  z-index: -1;
+}
+
+// forth-section
+
+.forth-section {
+  position: relative;
+}
+
+.forth-circle-1 {
+  bottom: 5em;
+  right: 55em;
+}
+
+.forth-circle-2 {
+  top: 10em;
+  left: 30em;
+}
+
+.forth-circle-3 {
+  top: 15em;
+  right: 15em;
+}

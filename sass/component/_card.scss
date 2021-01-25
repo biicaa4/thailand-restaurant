@@ -1,0 +1,30 @@
+/* Third-section */
+
+/* card-layout */
+.card {
+  @include space-around-flex;
+  margin: 10em;
+}
+
+.card-layout {
+  width: 309px;
+  height: 450px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+
+  border-radius: 4em;
+  background: linear-gradient(
+    113.48deg,
+    rgba(255, 255, 255, 0.48) 0%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+  z-index: 1;
+}
+
+.card-circle {
+  width: 25em;
+  height: 25em;
+  border-radius: 50%;
+  margin: 4em 3em;
+  background-size: cover;
+  overflow: hidden;
+}

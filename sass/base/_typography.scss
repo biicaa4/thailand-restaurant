@@ -1,0 +1,41 @@
+// first-section
+.heading {
+  padding: 2em 5em;
+  z-index: 1;
+}
+
+.heading-sub {
+  font-size: 4.5em;
+  padding-bottom: 1.5em;
+}
+
+.heading-sub h1 {
+  font-weight: 800;
+}
+.heading span,
+p {
+  font-size: 2em;
+  color: #b97687;
+  line-height: 2;
+  margin-bottom: 1.5em;
+}
+
+//third-section
+
+.third-section h2 {
+  background: linear-gradient(180deg, #e2b3a3 -48%, #a3b6c5 980%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding-top: 1em;
+  font-size: 4.5em;
+  font-weight: 800;
+}
+
+.card-layout h5 {
+  text-align: center;
+  margin-top: 2em;
+  color: #c1b8bc;
+  font-size: 2em;
+}

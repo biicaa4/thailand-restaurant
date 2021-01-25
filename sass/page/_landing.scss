@@ -1,0 +1,16 @@
+// first-section
+
+/* Detail-section */
+.first-flex {
+  flex-direction: row !important;
+}
+.detail {
+  padding: 0 1em 0 10em;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.line {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  width: 3%;
+}

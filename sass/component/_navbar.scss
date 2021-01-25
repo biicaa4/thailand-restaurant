@@ -1,0 +1,39 @@
+/* Navbar-section */
+.navbar {
+  display: flex;
+}
+
+.logo {
+  width: 35em;
+}
+.link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+  font-weight: 400;
+  font-size: 1.5em;
+  position: relative;
+  left: -5em;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.links {
+  padding: 2em;
+  list-style: none;
+  text-decoration: none;
+  color: #b97687;
+}
+.icon {
+  @include space-between-flex;
+
+  padding: 1em;
+  margin-top: 3.5em;
+  font-size: 2em;
+  color: #b97687;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  z-index: 2;
+}
