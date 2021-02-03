@@ -3,6 +3,11 @@
   min-height: 100vh;
   background: #fffcfc;
   z-index: -1;
+
+  @include respond(tab-port) {
+    z-index: -1;
+    min-height: 100vh;
+  }
 }
 
 // big-circle
@@ -20,6 +25,21 @@
   display: inline-block;
   border-radius: 50%;
   z-index: 0;
+
+  @include respond(tab-land) {
+    width: 45em;
+    height: 45em;
+  }
+
+  @include respond(tab-land-m) {
+    width: 40em;
+    height: 40em;
+  }
+
+  @include respond(tab-port) {
+    width: 35em;
+    height: 35em;
+  }
 }
 
 .layout-1 {
@@ -51,46 +71,123 @@
   width: 187px;
   height: 187px;
   position: absolute;
+
+  @include respond(tab-port) {
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+  }
 }
 
 .first-circle-1 {
   bottom: -8em;
   left: 10em;
+
+  @include respond(tab-port) {
+    bottom: 5em;
+    left: 10em;
+  }
 }
 .circle-2 {
   width: 257px;
   height: 257px;
   position: absolute;
+
+  @include respond(tab-land-m) {
+    width: 220px;
+    height: 220px;
+  }
+
+  @include respond(tab-port) {
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+  }
 }
 
 .first-circle-2 {
   top: 15em;
   left: 60em;
+
+  @include respond(tab-land) {
+    top: 5em;
+  }
+
+  @include respond(tab-land-m) {
+    top: 10em;
+    left: 40em;
+  }
+
+  @include respond(tab-port) {
+    top: 50em;
+    left: 60em;
+  }
 }
 .circle-3 {
   width: 77px;
   height: 77px;
   position: absolute;
+  z-index: -1;
 }
 
 .first-circle-3 {
   bottom: 5em;
   right: 55em;
+
+  @include respond(big-desktop) {
+    right: 20em;
+    top: 10em;
+  }
+
+  @include respond(tab-land) {
+    right: 20em;
+    top: 10em;
+  }
+
+  @include respond(tab-land-m) {
+    right: 20em;
+    top: 10em;
+  }
+  @include respond(tab-port) {
+    right: 20em;
+    top: 10em;
+  }
 }
 
 // second-section layout
 
+.second-section {
+  @include respond(tab-land) {
+    min-height: 150vh;
+  }
+  @include respond(tab-land-m) {
+    min-height: 110vh;
+  }
+  @include respond(tab-port) {
+    min-height: 110vh;
+  }
+}
 .second-section {
   position: relative;
 }
 .second-circle-1 {
   top: -10em;
   left: 50em;
+
+  @include respond(tab-port) {
+    top: 20em;
+    left: 10em;
+  }
 }
 
 .second-circle-2 {
   top: 30em;
   right: 50em;
+
+  @include respond(tab-port) {
+    top: 50em;
+    left: 60em;
+  }
 }
 
 .second-circle-3 {
@@ -104,7 +201,16 @@
   background: linear-gradient(253.81deg, #f0f0f0 0%, #d2d2d2 100.83%);
   border-radius: 35px;
   position: relative;
-  min-height: 120vh;
+  min-height: 100vh;
+
+  @include respond(tab-land) {
+    min-height: 100vh;
+  }
+
+  @include respond(tab-port) {
+    min-height: 100vh;
+    margin-top: 10em;
+  }
 }
 
 .third-big-circle {
@@ -149,11 +255,25 @@
 .forth-circle-1 {
   bottom: 5em;
   right: 55em;
+
+  @include respond(tab-port) {
+    bottom: 20em;
+    right: 5em;
+  }
 }
 
 .forth-circle-2 {
   top: 10em;
   left: 30em;
+
+  @include respond(tab-land-m) {
+    left: 10em;
+  }
+
+  @include respond(tab-port) {
+    top: 40em;
+    left: 5em;
+  }
 }
 
 .forth-circle-3 {

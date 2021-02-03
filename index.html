@@ -16,22 +16,25 @@
     <section class="first-section">
       <div class="layout-1 big-circle"></div>
       <div class="layout-2 big-circle"></div>
+      <img src="img/MODEL.png" class="logo" alt="owner-thai-restaurant" />
+      <input type="checkbox" class="navbar_checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="navbar_button">
+        <div class="navbar_icon">&nbsp;</div>
+      </label>
       <div class="navbar">
-        <img src="img/MODEL.png" class="logo" alt="owner-thai-restaurant" />
-
         <ul class="link">
-          <a href="" class="links"> <li>Home</li></a>
-          <a href="" class="links"> <li>About Us</li></a>
-          <a href="" class="links"> <li>Our Menu</li></a>
-          <a href="" class="links"> <li>Location</li></a>
-          <a href="" class="links"> <li>Contact</li></a>
+          <a href="#nav-toggle" class="links"> <li>Home</li></a>
+          <a href="#about-us" class="links"> <li>About Us</li></a>
+          <a href="#our-menu" class="links"> <li>Our Menu</li></a>
+          <a href="#location" class="links"> <li>Location</li></a>
+          <a href="#contact" class="links"> <li>Contact</li></a>
         </ul>
         <a href="" class="icon"> <i class="fab fa-facebook-f"></i></a>
         <a href="" class="icon"> <i class="fab fa-instagram"></i></a>
       </div>
 
       <div class="detail first-flex">
-        <div class="heading">
+        <div class="heading margin-top-tab-port">
           <div class="line">&nbsp;</div>
           <h2>Restaurant</h2>
 
@@ -55,7 +58,7 @@
       <div class="detail">
         <div class="heading">
           <div class="line">&nbsp;</div>
-          <h2>About Us</h2>
+          <h2 id="about-us">About Us</h2>
 
           <div class="heading-sub">
             <h1>Fresh and Quality Food</h1>
@@ -82,7 +85,7 @@
     <section class="third-section layout">
       <div class="layout-1 big-circle third-big-circle"></div>
       <div class="layout-2 big-circle third-big-circle"></div>
-      <h2>Our Menu</h2>
+      <h2 id="our-menu">Our Menu</h2>
 
       <div class="card">
         <div class="card-layout">
@@ -131,7 +134,7 @@
 
         <div class="heading margin-top">
           <div class="line">&nbsp;</div>
-          <h2>Location</h2>
+          <h2 id="location">Location</h2>
 
           <div class="heading-sub font-md">
             <h1>Find us at here</h1>
@@ -148,11 +151,12 @@
       <div class="circle-2 circle forth-circle-2"></div>
       <div class="circle-3 circle forth-circle-3"></div>
     </section>
+
     <section class="five-section layout">
       <div class="detail first-flex">
         <div class="heading margin-top-lg">
           <div class="line">&nbsp;</div>
-          <h2>Location</h2>
+          <h2 id="contact">Contact</h2>
 
           <div class="heading-sub font-md width-20em">
             <h1>Booking or Inqueries</h1>

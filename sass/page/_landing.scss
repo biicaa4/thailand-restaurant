@@ -3,12 +3,22 @@
 /* Detail-section */
 .first-flex {
   flex-direction: row !important;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 }
 .detail {
   padding: 0 1em 0 10em;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+
+  @include respond(tab-port) {
+    position: relative;
+    padding: 0em;
+    display: inline;
+  }
 }
 .line {
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);

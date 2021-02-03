@@ -1,10 +1,115 @@
 /* Navbar-section */
 .navbar {
   display: flex;
+
+  @include respond(tab-port) {
+    position: absolute;
+    z-index: 5;
+    min-height: 30vh;
+    width: 100%;
+    background-color: white;
+    top: -50em;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 5em 5em;
+  }
+
+  @include respond(phone) {
+    width: 150%;
+  }
 }
 
+.navbar_checkbox {
+  visibility: hidden;
+  @include respond(tab-port) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+  }
+}
+
+.navbar_button {
+  @include respond(tab-port) {
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    top: 6em;
+    right: 6em;
+    z-index: 6;
+  }
+}
+.navbar_icon {
+  @include respond(tab-port) {
+    margin-top: 2em;
+    position: relative;
+    top: 0;
+    left: 2em;
+
+    &,
+    &::before,
+    &::after {
+      width: 3em;
+      height: 2px;
+      background-color: #b97687;
+      display: inline-block;
+      transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+    }
+
+    &::before {
+      top: -0.8em;
+    }
+    &::after {
+      top: 0.8em;
+    }
+  }
+
+  @include respond(phone) {
+    left: 5em;
+  }
+}
+
+.navbar_checkbox:checked ~ .navbar {
+  @include respond(tab-port) {
+    top: 0;
+  }
+}
+
+.navbar_checkbox:checked + .navbar_button .navbar_icon {
+  @include respond(tab-port) {
+    background-color: transparent;
+  }
+}
+
+.navbar_checkbox:checked + .navbar_button .navbar_icon::before {
+  @include respond(tab-port) {
+    transform: rotate(45deg);
+    top: 0;
+  }
+}
+
+.navbar_checkbox:checked + .navbar_button .navbar_icon::after {
+  @include respond(tab-port) {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+}
 .logo {
   width: 35em;
+  display: flex;
+  position: absolute;
+  top: 0;
+
+  @include respond(phone) {
+    left: -8em;
+  }
 }
 .link {
   display: flex;
@@ -14,9 +119,16 @@
   font-weight: 400;
   font-size: 1.5em;
   position: relative;
-  left: -5em;
+  margin-top: 1em;
+  right: -20em;
   cursor: pointer;
   z-index: 2;
+
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .links {
@@ -28,12 +140,19 @@
 .icon {
   @include space-between-flex;
 
-  padding: 1em;
-  margin-top: 3.5em;
+  padding: 1.5em;
+  margin-top: 2.5em;
   font-size: 2em;
   color: #b97687;
   text-decoration: none;
   list-style: none;
   cursor: pointer;
   z-index: 2;
+  position: relative;
+  right: -20em;
+
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+  }
 }

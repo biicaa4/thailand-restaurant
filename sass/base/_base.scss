@@ -9,7 +9,30 @@
 }
 
 html {
+  font-size: 62.5%;
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-land-m) {
+    font-size: 45%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 45%;
+  }
+
+  @include respond(phone) {
+    font-size: 40%;
+  }
+}
+
+body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  font-size: 62.5%;
 }

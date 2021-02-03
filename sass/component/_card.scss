@@ -18,6 +18,24 @@
     rgba(255, 255, 255, 0.12) 100%
   );
   z-index: 1;
+
+  @include respond(tab-land) {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 5em;
+  }
+
+  @include respond(tab-land-m) {
+    width: 300px;
+    height: 380px;
+    margin-bottom: 5em;
+  }
+
+  @include respond(tab-port) {
+    width: 250px;
+    height: 350px;
+    margin-bottom: 5em;
+  }
 }
 
 .card-circle {
@@ -27,4 +45,22 @@
   margin: 4em 3em;
   background-size: cover;
   overflow: hidden;
+
+  @include respond(tab-land) {
+    width: 23rem;
+    height: 23em;
+    margin: 5em;
+  }
+
+  @include respond(tab-land-m) {
+    width: 23em;
+    height: 23em;
+    margin: 8em;
+  }
+
+  @include respond(tab-port) {
+    width: 23em;
+    height: 23em;
+    margin: 5em;
+  }
 }

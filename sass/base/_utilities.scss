@@ -6,6 +6,10 @@
 
 .margin-top-lg {
   margin-top: 20em;
+
+  @include respond(tab-port) {
+    margin-top: 5em;
+  }
 }
 
 .location {
@@ -30,4 +34,8 @@
 
 .p-top-18em {
   padding-top: 18em;
+
+  @include respond(tab-port) {
+    padding-top: 0;
+  }
 }
