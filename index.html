@@ -3,14 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    ></script>
     <title>SoThai</title>
+    <script defer src="index.js"></script>
   </head>
   <body>
     <section class="first-section">
@@ -140,11 +151,7 @@
             <h1>Find us at here</h1>
           </div>
           <p>Store Kongensgade 9 1264 København</p>
-          <img
-            src="img/location-restaurant1.png"
-            class="img-size location"
-            alt="location-thai-restaurant"
-          />
+          <div class="img-size location" id="map"></div>
         </div>
       </div>
       <div class="circle-1 circle forth-circle-1"></div>
